@@ -1,6 +1,6 @@
 file_path = './task_2/hw_example.txt'
 
-def get_cats_info(path: int) -> list[dict]:
+def get_cats_info(path: str) -> list[dict]:
     cats_info = []
 
     try:
