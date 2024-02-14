@@ -6,12 +6,16 @@ def parse_input(user_input):
 
 def add_contact(args, contacts):
     name, phone = args
+    if name in contacts:
+        return "Contact already exists."
     contacts[name] = phone
     return "Contact added."
 
 
 def change_contact(args, contacts):
     name, phone = args
+    if name not in contacts:
+        return "Contact not found"
     contacts[name] = phone
     return "Contact changed."
 
